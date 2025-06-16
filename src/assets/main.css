@@ -1,0 +1,151 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --color-primary: #9dabce;
+  --color-secondary: #554d5e;
+  --color-accent: #9c8aa0;
+  --color-foreground: #f0f1f3;
+  --color-background: #0f1013;
+  --color-background-secondary: #1a1c20;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Lightitalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Mediumitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Extbdita.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Blackitalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quanta Grotesk Pro';
+  src: url('./fonts/Quanta Grotesk Pro Extltita.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-quanta-grotesk-pro: 'Quanta Grotesk Pro', sans-serif;
+}
+
+@utility container {
+  padding-inline: 1rem;
+  @media (width >= theme(--breakpoint-sm)) {
+    padding-inline: 2rem;
+  }
+  @media (width >= theme(--breakpoint-md)) {
+    padding-inline: 0;
+    max-width: 720px;
+  }
+  @media (width >= theme(--breakpoint-lg)) {
+    max-width: 960px;
+  }
+  @media (width >= theme(--breakpoint-xl)) {
+    max-width: 1140px;
+  }
+  @media (width >= theme(--breakpoint-2xl)) {
+    max-width: 1320px;
+  }
+}
+
+.bg-hero {
+  background-image: url('./hero.png');
+}
