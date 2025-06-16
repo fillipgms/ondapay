@@ -2,7 +2,7 @@
 @import 'tw-animate-css';
 
 @theme {
-  --color-primary: #9dabce;
+  --color-primary: hsl(140 50% 45%);
   --color-secondary: #554d5e;
   --color-accent: #9c8aa0;
   --color-foreground: #f0f1f3;
