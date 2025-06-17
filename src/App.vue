@@ -341,14 +341,14 @@ import FaqItem from './components/FaqItem.vue'
           >
             <div class="absolute inset-0 z-0">
               <SpotlightEffect
-                :gradient-first="'radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(210, 80%, 85%, 0.18) 0, hsla(265, 54%, 80%, 0.12) 50%, hsla(315, 77%, 90%, 0.10) 100%)'"
-                :gradient-second="'radial-gradient(50% 50% at 50% 50%, hsla(315, 77%, 90%, 0.10) 0, hsla(210, 80%, 85%, 0.08) 80%, transparent 100%)'"
-                :gradient-third="'radial-gradient(50% 50% at 50% 50%, hsla(265, 54%, 80%, 0.10) 0, hsla(210, 80%, 85%, 0.06) 80%, transparent 100%)'"
+                :gradient-first="'radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(140, 80%, 85%, 0.12) 0, hsla(140, 54%, 80%, 0.08) 50%, hsla(140, 77%, 90%, 0.06) 100%)'"
+                :gradient-second="'radial-gradient(50% 50% at 50% 50%, hsla(140, 77%, 90%, 0.06) 0, hsla(140, 80%, 85%, 0.04) 80%, transparent 100%)'"
+                :gradient-third="'radial-gradient(50% 50% at 50% 50%, hsla(140, 54%, 80%, 0.06) 0, hsla(140, 80%, 85%, 0.03) 80%, transparent 100%)'"
                 :translate-y="-250"
-                :width="600"
-                :height="1400"
-                :small-width="300"
-                :duration="8"
+                :width="800"
+                :height="1600"
+                :small-width="400"
+                :duration="12"
                 :x-offset="120"
               />
             </div>

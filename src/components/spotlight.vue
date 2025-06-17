@@ -76,77 +76,79 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pointer-events-none absolute inset-0 h-full w-full" :style="{ opacity }">
-    <!-- Left side gradients -->
-    <div
-      class="absolute top-0 left-0 w-screen h-screen z-0 pointer-events-none"
-      :style="{ transform: `translateX(${leftX}px) translateY(${leftY}px)` }"
-    >
+  <div style="filter: blur(10px); pointer-events: none">
+    <div class="pointer-events-none absolute inset-0 h-full w-full" :style="{ opacity }">
+      <!-- Left side gradients -->
       <div
-        :style="{
-          transform: `translateY(${translateY}px) rotate(-45deg)`,
-          background: gradientFirst,
-          width: `${width}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 left-0"
-      />
+        class="absolute top-0 left-0 w-screen h-screen z-0 pointer-events-none"
+        :style="{ transform: `translateX(${leftX}px) translateY(${leftY}px)` }"
+      >
+        <div
+          :style="{
+            transform: `translateY(${translateY}px) rotate(-45deg)`,
+            background: gradientFirst,
+            width: `${width}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 left-0"
+        />
 
-      <div
-        :style="{
-          transform: 'rotate(-45deg) translate(5%, -50%)',
-          background: gradientSecond,
-          width: `${smallWidth}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 left-0 origin-top-left"
-      />
+        <div
+          :style="{
+            transform: 'rotate(-45deg) translate(5%, -50%)',
+            background: gradientSecond,
+            width: `${smallWidth}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 left-0 origin-top-left"
+        />
 
-      <div
-        :style="{
-          transform: 'rotate(-45deg) translate(-180%, -70%)',
-          background: gradientThird,
-          width: `${smallWidth}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 left-0 origin-top-left"
-      />
-    </div>
+        <div
+          :style="{
+            transform: 'rotate(-45deg) translate(-180%, -70%)',
+            background: gradientThird,
+            width: `${smallWidth}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 left-0 origin-top-left"
+        />
+      </div>
 
-    <!-- Right side gradients -->
-    <div
-      class="absolute top-0 right-0 w-screen h-screen z-0 pointer-events-none"
-      :style="{ transform: `translateX(${rightX}px) translateY(${rightY}px)` }"
-    >
+      <!-- Right side gradients -->
       <div
-        :style="{
-          transform: `translateY(${translateY}px) rotate(45deg)`,
-          background: gradientFirst,
-          width: `${width}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 right-0"
-      />
+        class="absolute top-0 right-0 w-screen h-screen z-0 pointer-events-none"
+        :style="{ transform: `translateX(${rightX}px) translateY(${rightY}px)` }"
+      >
+        <div
+          :style="{
+            transform: `translateY(${translateY}px) rotate(45deg)`,
+            background: gradientFirst,
+            width: `${width}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 right-0"
+        />
 
-      <div
-        :style="{
-          transform: 'rotate(45deg) translate(-5%, -50%)',
-          background: gradientSecond,
-          width: `${smallWidth}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 right-0 origin-top-right"
-      />
+        <div
+          :style="{
+            transform: 'rotate(45deg) translate(-5%, -50%)',
+            background: gradientSecond,
+            width: `${smallWidth}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 right-0 origin-top-right"
+        />
 
-      <div
-        :style="{
-          transform: 'rotate(45deg) translate(180%, -70%)',
-          background: gradientThird,
-          width: `${smallWidth}px`,
-          height: `${height}px`,
-        }"
-        class="absolute top-0 right-0 origin-top-right"
-      />
+        <div
+          :style="{
+            transform: 'rotate(45deg) translate(180%, -70%)',
+            background: gradientThird,
+            width: `${smallWidth}px`,
+            height: `${height}px`,
+          }"
+          class="absolute top-0 right-0 origin-top-right"
+        />
+      </div>
     </div>
   </div>
 </template>
